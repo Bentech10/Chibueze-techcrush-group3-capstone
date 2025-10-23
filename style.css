@@ -1,0 +1,103 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #24292e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: #0078d4;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #0078d4;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #003e75;
+    color: white;
+}
+
+/* Learned Section */
+.learned {
+    padding: 40px 0;
+    background: #e9f1ff;
+}
+
+.learned ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.learned ul li {
+    margin-bottom: 10px;
+}
+
+/* Project Section */
+.project {
+    padding: 40px 0;
+}
+
+/* Footer */
+footer {
+    background: #24292e;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #58a6ff;
+    text-decoration: none;
+}
