@@ -1,0 +1,29 @@
+name: Deploy Static Website to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main  # Trigger only on pushes to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Log in to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Upload files to Azure Blob Storage
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name chibuezeblob \
+              --destination '$web' \
+              --source . \
+              --overwrite
